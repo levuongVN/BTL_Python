@@ -53,8 +53,8 @@ def menu1(file,add):
           
 # menu4 xem tat ca phong
 def menu4(file):
-     with open(file,'r', encoding='utf-8')as r:
-          render=csv.DictReader(r)
+     with open(file,'r', encoding='utf-8')as document:
+          render=csv.DictReader(document)
           next(render)
           print(f'Số phòng\t Loại\t  Giá\t Trạng thái')
           for row in render:
